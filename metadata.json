@@ -1,0 +1,6 @@
+{
+  "name": "Maison Velouté — Artisanal Café & Roastery",
+  "description": "A luxury, minimalist café website with editorial design, artisanal coffee menus, table reservations, and smooth animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
