@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
 import { ChevronDown, Sparkles, ArrowRight } from 'lucide-react';
+import { CAFE_IMAGES } from '../data/cafeData';
 
 interface HeroProps {
   onExploreMenu: () => void;
@@ -28,7 +29,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreMenu, onDiscoverStory }) =>
       {/* Full-width, high-quality background image of coffee scene with subtle dark overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         <img
-          src="/src/assets/images/hero_coffee_bg_1791627760899.jpg"
+          src={CAFE_IMAGES.heroCoffeeBg}
           alt="Artisanal steaming coffee cup and roasted beans on oak café table"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-center scale-105 transition-transform duration-1000"
@@ -195,10 +196,10 @@ export const Hero: React.FC<HeroProps> = ({ onExploreMenu, onDiscoverStory }) =>
               className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-[#FFF9F2]/90 bg-[#29211D]"
             >
               <img
-                src="/src/assets/images/hero_cappuccino_art_1791626448105.jpg"
+                src={CAFE_IMAGES.heroCappuccino}
                 alt="Artisanal cappuccino with swan latte art and golden butter croissant on linen cloth"
                 referrerPolicy="no-referrer"
-                className="w-full h-[360px] sm:h-[440px] md:h-[480px] object-cover object-center transition-transform duration-700 group-hover:scale-102"
+                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-102"
               />
 
               {/* Gentle ambient gradient overlay */}

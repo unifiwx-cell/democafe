@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Sparkles, HeartHandshake, Flame, Wheat } from 'lucide-react';
+import { CAFE_IMAGES } from '../data/cafeData';
 
 interface StoryModalProps {
   isOpen: boolean;
@@ -51,7 +52,7 @@ export const StoryModal: React.FC<StoryModalProps> = ({ isOpen, onClose }) => {
             <div className="p-6 overflow-y-auto space-y-6 text-sm text-[#29211D]/80 leading-relaxed">
               <div className="rounded-xl overflow-hidden border border-[#E8D6C4] bg-[#F5EADF] h-48">
                 <img
-                  src="/src/assets/images/cafe_interior_cozy_1791626484992.jpg"
+                  src={CAFE_IMAGES.cafeInteriorCozy}
                   alt="Maison Velouté space"
                   className="w-full h-full object-cover"
                 />

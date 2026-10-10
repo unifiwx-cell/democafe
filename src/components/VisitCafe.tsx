@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { MapPin, Clock, Phone, Calendar, Navigation, Copy, Check, Sparkles } from 'lucide-react';
-import { CAFE_INFO } from '../data/cafeData';
+import { CAFE_INFO, CAFE_IMAGES } from '../data/cafeData';
 
 interface VisitCafeProps {
   onOpenReservation: () => void;
@@ -145,7 +145,7 @@ export const VisitCafe: React.FC<VisitCafeProps> = ({
                 className="col-span-2 rounded-2xl overflow-hidden shadow-lg border border-[#E8D6C4] h-64 sm:h-72 bg-[#F5EADF] relative group"
               >
                 <img
-                  src="/src/assets/images/cafe_interior_cozy_1791626484992.jpg"
+                  src={CAFE_IMAGES.cafeInteriorCozy}
                   alt="Sunlit corner booth with oak table and linen cushions"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-103"
@@ -162,7 +162,7 @@ export const VisitCafe: React.FC<VisitCafeProps> = ({
                 className="rounded-xl overflow-hidden shadow-md border border-[#E8D6C4] h-48 bg-[#F5EADF] relative group"
               >
                 <img
-                  src="/src/assets/images/barista_craft_latte_1791626513600.jpg"
+                  src={CAFE_IMAGES.baristaCraftLatte}
                   alt="Barista brewing single origin espresso"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -179,7 +179,7 @@ export const VisitCafe: React.FC<VisitCafeProps> = ({
                 className="rounded-xl overflow-hidden shadow-md border border-[#E8D6C4] h-48 bg-[#F5EADF] relative group"
               >
                 <img
-                  src="/src/assets/images/bakery_pastry_croissant_1791626497832.jpg"
+                  src={CAFE_IMAGES.bakeryPastryCroissant}
                   alt="Fresh bakery showcase"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

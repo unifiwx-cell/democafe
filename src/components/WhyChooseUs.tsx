@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Coffee, Croissant, Sparkles, Compass } from 'lucide-react';
+import { CAFE_IMAGES } from '../data/cafeData';
 
 export const WhyChooseUs: React.FC = () => {
   const features = [
@@ -9,7 +10,7 @@ export const WhyChooseUs: React.FC = () => {
       title: 'Exceptional Coffee',
       description: 'Carefully selected beans, thoughtfully prepared for a beautifully balanced cup.',
       icon: Coffee,
-      image: '/src/assets/images/barista_craft_latte_1791626513600.jpg',
+      image: CAFE_IMAGES.baristaCraftLatte,
       meta: 'Micro-Batch Roast · 9 Bar Extraction',
     },
     {
@@ -17,7 +18,7 @@ export const WhyChooseUs: React.FC = () => {
       title: 'Freshly Made',
       description: 'Delicious pastries and café favorites prepared with care and quality ingredients.',
       icon: Croissant,
-      image: '/src/assets/images/bakery_pastry_croissant_1791626497832.jpg',
+      image: CAFE_IMAGES.bakeryPastryCroissant,
       meta: '84% French Butter · Dawn Baked',
     },
     {
@@ -25,7 +26,7 @@ export const WhyChooseUs: React.FC = () => {
       title: 'A Cozy Escape',
       description: 'A welcoming atmosphere where you can relax, connect, work, or simply enjoy the moment.',
       icon: Compass,
-      image: '/src/assets/images/cafe_interior_cozy_1791626484992.jpg',
+      image: CAFE_IMAGES.cafeInteriorCozy,
       meta: 'Acoustic Comfort · Natural Light',
     },
   ];

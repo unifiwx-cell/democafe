@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Sparkles, Coffee } from 'lucide-react';
+import { CAFE_IMAGES } from '../data/cafeData';
 
 interface AboutProps {
   onOpenStoryModal: () => void;
@@ -21,7 +22,7 @@ export const About: React.FC<AboutProps> = ({ onOpenStoryModal }) => {
               className="relative rounded-2xl overflow-hidden shadow-xl border border-[#E8D6C4]/80 group"
             >
               <img
-                src="/src/assets/images/cafe_interior_cozy_1791626484992.jpg"
+                src={CAFE_IMAGES.cafeInteriorCozy}
                 alt="Minimalist warm cream café interior with natural oak furniture and arched walls"
                 referrerPolicy="no-referrer"
                 className="w-full h-[400px] sm:h-[480px] lg:h-[520px] object-cover transition-transform duration-700 group-hover:scale-103"

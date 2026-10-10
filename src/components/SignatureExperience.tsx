@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Flame, Droplets, Compass } from 'lucide-react';
+import { CAFE_IMAGES } from '../data/cafeData';
 
 interface SignatureExperienceProps {
   onDiscoverCoffee: () => void;
@@ -29,7 +30,7 @@ export const SignatureExperience: React.FC<SignatureExperienceProps> = ({
               className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#A66B45]/30 group"
             >
               <img
-                src="/src/assets/images/artisan_pour_over_1791626466381.jpg"
+                src={CAFE_IMAGES.artisanPourOver}
                 alt="Cinematic specialty filter coffee pouring into handcrafted ceramic cup with warm steam"
                 referrerPolicy="no-referrer"
                 className="w-full h-[380px] sm:h-[460px] lg:h-[500px] object-cover transition-transform duration-700 group-hover:scale-103"
